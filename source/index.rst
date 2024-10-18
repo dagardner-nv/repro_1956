@@ -12,12 +12,10 @@ Welcome to repro_1956's documentation!
 
 Python API
 ==========
-.. autosummary::
-    :toctree: _modules
-    :template: custom-module-template.rst
-    :recursive:
+.. automodule:: repro_1956.type_aliases
+    :members:
 
-    repro_1956
+    
 
 
 Indices and tables

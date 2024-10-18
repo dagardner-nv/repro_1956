@@ -34,7 +34,6 @@ SeriesType = typing.Union["pandas.Series", "cudf.Series"]
 NDArrayType = typing.Union["numpy.ndarray", "cupy.ndarray"]
 """Alias for NumPy and CuPy ndarray types."""
 
-# Intentionally using `typing.Dict` instead of `dict` to avoid a Sphinx build error.
-# https://github.com/nv-morpheus/Morpheus/issues/1956
+# Using `typing.Dict[str, NDArrayType]` works-around the issue
 TensorMapType = dict[str, NDArrayType]
 """Alias for a dictionary of tensor names to tensors represented as either a NumPy or CuPy ndarray."""
